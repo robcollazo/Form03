@@ -53,6 +53,7 @@ img {
   font-family: Staatliches;
   font-size: 36px;
   font-weight: 400;
+  height: 45px;
 }
 
 .pre-header p {
@@ -60,6 +61,8 @@ img {
   font-family: Poppins;
   font-size: 16px;
   font-weight: 400;
+  height: 46px;
+  margin-bottom: 2px;
 }
 
 header {
@@ -98,15 +101,106 @@ fieldset {
   border: none;
 }
 
-.input-name {
+.fieldset-wrapper {
   display: flex;
+  flex-direction: column;
+  gap: 19px;
 }
 
-.input-name input {
+.input-name {
+  display: flex;
+  gap: 22px;
+}
+
+.input-name input,
+select,
+.date-wrapper input {
+  appearance: none;
   border-radius: 8px;
+  padding: 8px;
   border: 1px solid #e6e6f0;
   background: #fafafc;
 
   width: 300px;
   height: 55.529px;
+}
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 31px;
+}
+
+.input-wrapper input {
+  border-radius: 8px;
+  padding: 8px;
+  border: 1px solid, #e6e6f0;
+  background: #fafafc;
+  height: 55px;
+}
+
+legend {
+  text-align: center;
+  width: 100%;
+  padding: 8px;
+  color: #253b51;
+  font-family: Staatliches;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  border-bottom: solid 1px #e6e6f0;
+}
+
+textarea {
+  border-radius: 8px;
+  border: 1px solid #e6e6f0;
+  background: #fafafc;
+  width: 608px;
+  height: 166px;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-wrapper input {
+  border: 1px solid #e6e6f0;
+  width: 24px;
+  height: 24px;
+}
+
+.calendar-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.time-wrapper input {
+  width: 140px;
+  height: 55.529px;
+}
+
+.button {
+  display: flex;
+  width: 622px;
+  height: 51px;
+  padding: 15px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #f67669;
+  border: none;
+
+  color: #fff;
+  font-family: Staatliches;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px; /* 130% */
 }
